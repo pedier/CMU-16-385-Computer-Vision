@@ -1,6 +1,6 @@
 # CMU 16-385: Computer Vision
 
-Fall 2026 coursework: three programming projects plus the HW0 Python/NumPy introduction. Each notebook is bundled with its corresponding inputs and saved results.
+Fall 2026 coursework: three programming projects plus the HW0 Python/NumPy introduction. Each project includes a notebook, a standalone Python script, bundled inputs, and saved results.
 
 | Folder | Notebook | Bundled inputs | Colab |
 | --- | --- | --- | --- |
@@ -19,6 +19,17 @@ python -m jupyter lab
 ```
 
 Open a notebook and run its setup cell first. It selects the correct working directory, so the existing relative data paths work. Keep the `hw0`–`hw3` directory structure together.
+
+To run the Python versions without Jupyter, choose a script:
+
+```sh
+python hw0/numpy_and_visualize.py
+python hw1/image_filtering_and_hough_transform.py
+python hw2/augmented_reality.py
+python hw3/reconstruction_3d.py
+```
+
+The scripts execute the notebook code in order and locate data relative to their own file paths, so they also work when launched from another directory. They display Matplotlib figures and write results to the same locations as the notebooks. Close each figure window to continue; for a noninteractive run, set `MPLBACKEND=Agg` before launching Python.
 
 ## Google Colab
 
